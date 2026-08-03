@@ -2,7 +2,7 @@
 
 ## Integrante
 
-* Miguel Ribeiro Fleck3 , Jonatha
+* Miguel Ribeiro Fleck , Jonatha
 
 ## Domínio
 
