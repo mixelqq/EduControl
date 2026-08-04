@@ -45,6 +45,13 @@ Desenvolver um sistema que torne mais eficiente o processo de gerenciamento de c
 
 Foi utilizada Inteligência Artificial como ferramenta de apoio para brainstorming, organização das ideias, revisão textual e estruturação do planejamento do projeto. Todas as decisões referentes ao sistema foram analisadas e definidas pelo autor.
 
+## Classes
+
+Aluno
+Professor
+Curso
+Matricula
+
 
 ## diagrama:
 
