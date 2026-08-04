@@ -1,3 +1,4 @@
+<img width="696" height="488" alt="Captura de tela 2026-08-03 210751" src="https://github.com/user-attachments/assets/15304164-e5b6-45bf-9d9d-c7d5a982945e" />
 # EduControl – Sistema de Cursos e Matrículas
 
 ## Integrante
