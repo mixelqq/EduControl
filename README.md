@@ -67,4 +67,15 @@ poo-edu-control/
 ├── Professor.java
 ├── Curso.java
 ├── Matricula.java
+│
+├── img/
+│   ├── main.png
+│   ├── aluno.png
+│   ├── aluno 2.png
+│   ├── curso.png
+│   ├── matricula.png
+│   ├── professor.png
+│   └── codigo rodando.png
+│
 └── README.md
+
