@@ -33,6 +33,81 @@ O objetivo do projeto é desenvolver uma aplicação simples que represente o fu
 - 🐙 **GitHub**
 
 ---
+# Diagrama atulizado:  
+```mermaid
+classDiagram
+  class Aluno {
+    -id: int
+    -nome: String
+    -email: String
+    -matriculado: boolean
+    +Aluno(id, nome, email)
+    +getId() int
+    +getNome() String
+    +getEmail() String
+    +isMatriculado() boolean
+    +matricular() void
+    +exibirInformacoes() void
+  }
+  class Professor {
+    -id: int
+    -nome: String
+    -email: String
+    -lecionando: boolean
+    +Professor(id, nome, email)
+    +getId() int
+    +getNome() String
+    +getEmail() String
+    +isLecionando() boolean
+    +lecionar() void
+    +exibirInformacoes() void
+  }
+  class Curso {
+    -id: int
+    -nome: String
+    -descricao: String
+    -turno: Turno
+    -vagasTotais: int
+    -vagasOcupadas: int
+    +Curso(id, nome, descricao, turno, vagasTotais)
+    +getId() int
+    +getTurno() Turno
+    +adicionarAluno() void
+    +exibirInformacoes() void
+  }
+  class Matricula {
+    -id: int
+    -aluno: Aluno
+    -curso: Curso
+    -data: String
+    -status: StatusMatricula
+    +Matricula(id, aluno, curso, data)
+    +getStatus() StatusMatricula
+    +confirmar() void
+    +cancelar() void
+    +exibirInformacoes() void
+  }
+  class Turno {
+    <<enumeration>>
+    MATUTINO
+    VESPERTINO
+    NOTURNO
+  }
+  class StatusMatricula {
+    <<enumeration>>
+    PENDENTE
+    CONFIRMADA
+    CANCELADA
+  }
+  Matricula "many" --> "1" Aluno : refere-se a
+  Matricula "many" --> "1" Curso : refere-se a
+  Curso --> Turno : possui
+  Matricula --> StatusMatricula : possui
+```
+
+
+
+
 
 ## 📂 Estrutura do projeto
 
@@ -50,4 +125,4 @@ poo-edu-control/
     ├── imagem1.png
     └── imagem2.png
 
-# Diagrama atulizado
+
