@@ -49,3 +49,5 @@ poo-edu-control/
 └── img/
     ├── imagem1.png
     └── imagem2.png
+
+# Diagrama atulizado
