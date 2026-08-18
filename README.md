@@ -1,5 +1,9 @@
 # 🎓 EduControl — Sistema de Cursos e Matrículas
 
+## Integrante
+
+* Miguel Ribeiro Fleck , Jonatha
+
 ## 📌 Sobre o projeto
 
 O **EduControl** é um sistema desenvolvido em **Java** com o objetivo de representar o gerenciamento de uma instituição de ensino.
