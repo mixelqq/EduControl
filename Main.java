@@ -5,16 +5,16 @@ public class Main {
         System.out.println("=== EduControl ===");
 
         // Dados de demonstração — todos os objetos nascem em estado válido
-        aluno miguel = new aluno(1, "Miguel", "miguel@email.com");
-        professor carlos = new professor(1, "Carlos", "carlos@email.com");
-        curso poo = new curso(1, "Programação Orientada a Objetos", "Fundamentos de POO em Java", Turno.NOTURNO, 1);
+        Aluno miguel = new Aluno(1, "Miguel", "miguel@email.com");
+        Professor carlos = new Professor(1, "Carlos", "carlos@email.com");
+        Curso poo = new Curso(1, "Programação Orientada a Objetos", "Fundamentos de POO em Java", Turno.NOTURNO, 1);
 
         // Operações que alteram o estado dos objetos
         carlos.lecionar();
         miguel.matricular();
         poo.adicionarAluno();
 
-        matricula matriculaMiguel = new matricula(1, miguel, poo, "2026-08-17");
+        Matricula matriculaMiguel = new Matricula(1, miguel, poo, "2026-08-17");
         matriculaMiguel.confirmar();
 
         System.out.println();
@@ -36,7 +36,7 @@ public class Main {
 
         // Exemplo de construtor rejeitando dados inválidos
         try {
-            new aluno(2, "", "sememail");
+            new Aluno(2, "", "sememail");
         } catch (IllegalArgumentException e) {
             System.out.println("Erro esperado: " + e.getMessage());
         }

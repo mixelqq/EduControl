@@ -1,11 +1,11 @@
-public class professor {
+public class Professor {
 
     private final int id;
     private String nome;
     private String email;
     private boolean lecionando; // estado do objeto: começa sempre false
 
-    public professor(int id, String nome, String email) {
+    public Professor(int id, String nome, String email) {
         if (id <= 0) {
             throw new IllegalArgumentException("ID deve ser maior que zero");
         }

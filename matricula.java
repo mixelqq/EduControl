@@ -1,12 +1,12 @@
-public class matricula {
+public class Matricula {
 
     private final int id;
-    private final aluno aluno;
-    private final curso curso;
+    private final Aluno aluno;
+    private final Curso curso;
     private final String data;
     private StatusMatricula status; // estado do objeto
 
-    public matricula(int id, aluno aluno, curso curso, String data) {
+    public Matricula(int id, Aluno aluno, Curso curso, String data) {
         if (id <= 0) {
             throw new IllegalArgumentException("ID deve ser maior que zero");
         }
@@ -30,11 +30,11 @@ public class matricula {
         return id;
     }
 
-    public aluno getAluno() {
+    public Aluno getAluno() {
         return aluno;
     }
 
-    public curso getCurso() {
+    public Curso getCurso() {
         return curso;
     }
 
