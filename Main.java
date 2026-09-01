@@ -13,6 +13,7 @@ public class Main {
         carlos.lecionar();
         miguel.matricular();
         poo.adicionarAluno();
+        carlos.adicionarCurso(poo); // associação Professor -> Curso (um professor leciona vários cursos)
 
         Matricula matriculaMiguel = new Matricula(1, miguel, poo, "2026-08-17");
         matriculaMiguel.confirmar();

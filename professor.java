@@ -1,9 +1,13 @@
+import java.util.ArrayList;
+import java.util.List;
+
 public class Professor {
 
     private final int id;
     private String nome;
     private String email;
     private boolean lecionando; // estado do objeto: começa sempre false
+    private List<Curso> cursos;
 
     public Professor(int id, String nome, String email) {
         if (id <= 0) {
@@ -19,6 +23,7 @@ public class Professor {
         this.nome = nome;
         this.email = email;
         this.lecionando = false;
+        this.cursos = new ArrayList<>();
     }
 
     public int getId() {
@@ -37,6 +42,10 @@ public class Professor {
         return lecionando;
     }
 
+    public List<Curso> getCursos() {
+        return cursos;
+    }
+
     // Operação que altera o estado do objeto
     public void lecionar() {
         if (lecionando) {
@@ -46,10 +55,16 @@ public class Professor {
         System.out.println("Professor lecionando!");
     }
 
+    // Método de inclusão exigido pela atividade
+    public void adicionarCurso(Curso curso) {
+        cursos.add(curso);
+    }
+
     public void exibirInformacoes() {
         System.out.println("ID: " + id);
         System.out.println("Nome: " + nome);
         System.out.println("Email: " + email);
         System.out.println("Lecionando: " + lecionando);
+        System.out.println("Cursos: " + cursos.size());
     }
 }
